@@ -9,3 +9,5 @@
 **KOUMAKO Jean Urbain** a fait la méthode ModifierProduit 
 
 **KOUFE Fovi** a fait la méthode afficherProduit pour afficher le stock total
+
+**PIGNAMSSI Gloria** a fait la méthode supprimerProduit
