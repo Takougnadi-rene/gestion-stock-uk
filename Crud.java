@@ -25,7 +25,7 @@ public class Crud {
 
 
 // Setters
-public void ModifierProduit(String nomProduit,double prix,int quantite) {
+public void ModifierProduit(String nomProduit,double prix,int quante) {
     this.nomProduit = nomProduit;
     this.quantite = quantite;
     this.prix = prix;
