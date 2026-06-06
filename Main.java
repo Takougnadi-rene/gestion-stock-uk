@@ -25,18 +25,19 @@ public class Main {
                 case 1:
                     // 1- Ajouter un Produit
                     System.out.println("nomProduit :");
-String nomProduit= sc.nextLine();
-sc.nextLine();
-System.out.println("quantite ;");
-int quantite = sc.nextInt();
-System.out.println("prix :");
-double prix =sc.nextDouble();
-Produit (p) = new Produit(nomProduit,quantite,prix);
-list.add(p);
-System.out.println("Produit ajoute !");
-break;
-
+                    
+                    sc.nextLine();
+                    nom = sc.next();
+                    System.out.println("quantite ;");
+                    quantite = sc.nextInt();
+                    System.out.println("prix :");
+                    prix = sc.nextDouble();
+                   
+                    produits.add(new Crud(nom,quantite,prix));
+                    System.out.println("Produit ajoute !");
                     break;
+
+                    
 
                 case 2:
                     System.out.println("Vous sohaitetez modifier un produit ? veuillez entrer le nom du produit :");
@@ -68,7 +69,7 @@ break;
                     nom = sc.next();
                     for (Crud produit : produits){
                         if (produit.nomProduit.equals(nom)) {
-                            supprimerProduit(nouveauNom);
+                            supprimerProduit(nom);
                         }
                     }
                     break;
@@ -76,7 +77,7 @@ break;
                     // fonctionnalite Rechercher
                     String produitAChercher = new String();
                     System.out.println("Entree produit a chercher");
-                    sc nextLine();
+                    sc.nextLine();
                     produitAchercher = sc.next();
                     for (Crud produit:produits){
                         if(produit.nomProduit.equal(produitAChercher)){
@@ -95,4 +96,5 @@ break;
             }
         } while (choix != 6);
     }
+    sc.close();
 }
