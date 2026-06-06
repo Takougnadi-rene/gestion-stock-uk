@@ -59,6 +59,23 @@ public class Main {
                         }
                     }
                     break;
+                case 5:
+                    // fonctionnalite Rechercher
+                    String produitAChercher = new String();
+                    System.out.println("Entree produit a chercher");
+                    sc nextLine();
+                    produitAchercher = sc.next();
+                    for (Crud produit:produits){
+                        if(produit.nomProduit.equal(produitAChercher)){
+                            system.out.println("Ce produit est disponible");
+                        }
+                        else{
+                            system.out.println("Produit indisponible");
+                        }
+                    }
+    
+                    break;
+
                 case 6:
                     System.out.println("AU Revoir");
 
