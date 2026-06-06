@@ -24,6 +24,17 @@ public class Main {
             switch (choix) {
                 case 1:
                     // 1- Ajouter un Produit
+                    System.out.println("nomProduit :");
+String nomProduit= sc.nextLine();
+sc.nextLine();
+System.out.println("quantite ;");
+int quantite = sc.nextInt();
+System.out.println("prix :");
+double prix =sc.nextDouble();
+Produit (p) = new Produit(nomProduit,quantite,prix);
+list.add(p);
+System.out.println("Produit ajoute !");
+break;
 
                     break;
 
